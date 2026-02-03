@@ -1,0 +1,685 @@
+/* OPENSKY Color Scheme */
+/* Primary: Red #dc2626, Blue #1d4ed8 */
+/* Accent: Green #10b981 for active states */
+
+/* Recruitment Module Layout */
+.recruitment-module-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+/* Top Navigation Bar */
+.recruitment-top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #dc2626; /* OPENSKY Red header */
+  border-bottom: 1px solid #b91c1c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  color: white;
+}
+
+.top-nav-left {
+  flex: 0 0 auto;
+}
+
+.module-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: white; /* White text on red background */
+}
+
+.top-nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.nav-tab {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.nav-tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-tab.active {
+  background: #10b981; /* Green for active tab */
+  color: white;
+}
+
+.top-nav-right {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: white;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.recruitment-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Vacancy Wizard Styles */
+.vacancy-wizard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+/* Wizard Navigation Bar */
+.wizard-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #dc2626; /* OPENSKY Red header */
+  border-bottom: 1px solid #b91c1c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.wizard-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wizard-nav-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: white;
+}
+
+.wizard-nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.wizard-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wizard-nav-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 8px;
+}
+
+.wizard-nav-steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.wizard-nav-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.wizard-nav-step:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.wizard-nav-step.active {
+  background: #10b981; /* Green for active step */
+  color: white;
+}
+
+.wizard-nav-step.completed {
+  color: #10b981; /* Green for completed steps */
+}
+
+.wizard-step-icon {
+  font-size: 16px;
+}
+
+.wizard-step-label {
+  font-weight: 500;
+}
+
+.wizard-nav-right {
+  display: flex;
+  gap: 8px;
+}
+
+/* Wizard Content */
+.wizard-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.wizard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wizard-step-content {
+  min-height: 400px;
+}
+
+.wizard-form-header {
+  margin-bottom: 32px;
+}
+
+.wizard-form-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.wizard-form-header p {
+  margin: 0 0 16px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.btn-import-template {
+  padding: 10px 20px;
+  background: #1d4ed8; /* OPENSKY Blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.btn-import-template:hover {
+  background: #1e40af;
+}
+
+.wizard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wizard-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.wizard-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wizard-form .form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.wizard-form .form-group input,
+.wizard-form .form-group select {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.wizard-form .form-group input:focus,
+.wizard-form .form-group select:focus {
+  outline: none;
+  border-color: #1d4ed8; /* OPENSKY Blue */
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+.wizard-form .form-group input.error,
+.wizard-form .form-group select.error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: -4px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #dc2626; /* OPENSKY Red */
+}
+
+/* Wizard Footer */
+.wizard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.wizard-footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.required-note {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.wizard-footer-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-save-continue {
+  padding: 12px 32px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-save-continue:hover:not(:disabled) {
+  background: #059669;
+}
+
+.btn-save-continue:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Candidates Tab Layout */
+.candidates-tab {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  overflow: hidden;
+}
+
+.candidates-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Left Sidebar */
+.candidates-sidebar {
+  width: 280px;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.btn-add-candidate {
+  margin: 16px;
+  padding: 12px 24px;
+  background: #10b981; /* Green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add-candidate:hover {
+  background: #059669;
+}
+
+.sidebar-section {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.sidebar-icon {
+  font-size: 16px;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.sidebar-stages {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.stage-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.stage-item:hover {
+  background: #f9fafb;
+}
+
+.stage-item.active {
+  background: #fef3c7;
+  border-left-color: #dc2626; /* OPENSKY Red */
+}
+
+.stage-label {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.stage-badge {
+  background: #e5e7eb;
+  color: #475569;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stage-item.active .stage-badge {
+  background: #dc2626; /* OPENSKY Red */
+  color: white;
+}
+
+/* Main Content */
+.candidates-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f9fafb;
+}
+
+.candidates-header {
+  padding: 20px 24px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidates-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.header-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.search-icon {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.filter-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #64748b;
+  padding: 4px;
+}
+
+/* Candidates Table */
+.candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.candidates-table thead {
+  background: #f9fafb;
+}
+
+.candidates-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.sort-icon {
+  margin-left: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.candidates-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.candidates-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.candidate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.candidate-info strong {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.candidate-role {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.stage-select-inline {
+  padding: 6px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 13px;
+  background: white;
+  color: #1e293b;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.stage-select-inline:hover {
+  border-color: #dc2626; /* OPENSKY Red */
+}
+
+.action-menu {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.action-menu:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Vacancies and Configuration Tabs */
+.vacancies-tab,
+.configuration-tab {
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px;
+  background: #f9fafb;
+}
